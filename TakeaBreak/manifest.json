@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Take a break",
+  "version": "1.0",
+  "description": "Enlarge 'next' link in Google search result.",
+  "homepage_url": "https://github.com/dadaa/3BaiNext",
+  "author": "Chihiro Sato",
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.co.jp/search*",
+                  "*://www.google.com/search*",
+                  "*://scholar.google.co.jp/scholar?hl=ja&as_sdt=0%2C5&q=user&btnG=&oq=user"],
+      "js": ["main.js"]
+    }
+  ]
+}
